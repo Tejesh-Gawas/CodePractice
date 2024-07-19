@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .image-container {
+            position: relative;
+            width: 1050px;
+            height: 550px;
+            margin: auto;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-container button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        .image-container button#prev {
+            left: 0;
+        }
+
+        .image-container button#next {
+            right: 0;
+        }
+
+        .name{
+           text-decoration-line: underline;
+           text-decoration-style: solid;
+        }
+
+        .info {
+            width: 900px;
+            margin: 30px auto 0;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Travel Pune</h1>
+    <h2>Places To Visit In Pune</h2>
+    <div class="image-container">
+        <button id="prev">&#8249;</button>
+        <img id="placeImage">
+        <button id="next">&#8250;</button>
+    </div>
+    <h3 id="placeName" class="name">Place Name</h3>
+    <p id="placeInfo" class="info">Information about the place will be displayed here.</p>
+</div>
+
+<script>
+    const places = [
+        {
+            name: "Shaniwar Wada",
+            imageUrl: ".idea/images/shaniwar_wada.jpg",
+            info: "Shaniwar Wada is a historical fortification in the city of Pune. Built in 1732, it was the great seat of the Peshwas of the Maratha Empire "
+        },
+        {
+            name: "Shreemant Dagdusheth Halwai Ganpati Temple",
+            imageUrl: ".idea/images/dagadusheth_temple.jpg",
+            info: "Shrimant Dagdusheth Halwai Ganpati is the epitome of pride and honor to the city of Pune. Devotees from every part of India and the world come here to pray to Lord Ganesha every year."
+        },
+        {
+            name: "Aga Khan Palace",
+            imageUrl: ".idea/images/agaKhan_palace.jpg",
+            info: "The Aga Khan Palace in the Yerwada region of Pune, Maharashtra, was built in 1892 near the Mula River by Imam Sultan Muhammad Shah Aga Khan III. Mahatma Gandhi, Kasturba Gandhi prominent Congress members were imprisoned."
+        },
+        {
+            name: "Khadakwasla Dam",
+            imageUrl: ".idea/images/khadakwasla_dam.jpg",
+            info: "Khadakwasla Dam is a dam on the Mutha River 21 km (13 mi) from the centre of the city of Pune. The dam created a reservoir known as Khadakwasla Lake which is the main source of water for Pune and its suburbs."
+        }
+    ];
+
+    let currentIndex = 0;
+
+    function updateContent() {
+        const placeName = document.getElementById("placeName");
+        const placeImage = document.getElementById("placeImage");
+        const placeInfo = document.getElementById("placeInfo");
+
+        placeName.innerText = places[currentIndex].name;
+        placeImage.src = places[currentIndex].imageUrl;
+        placeInfo.innerText = places[currentIndex].info;
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % places.length;
+        updateContent();
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + places.length) % places.length;
+        updateContent();
+    });
+
+    // Initialize content on load
+    updateContent();
+</script>
+</body>
+</html>
