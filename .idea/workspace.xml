@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a981994-be61-419c-ad19-1914e397980e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TravelApp/project/images-mumbai/gateway_of_india.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TravelApp/project/images-mumbai/home_mumbai.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TravelApp/project/images-mumbai/nehru_planetarium.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TravelApp/project/images-mumbai/siddhivinayak_temple.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TravelApp/project/images-mumbai/worli_bandra_seaLink.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/tgt2006/Documents/Learning/TravelApp/project/images-mumbai",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TravelApp/project/images-mumbai" />
+      <recent name="$PROJECT_DIR$/TravelApp/project/images-pune" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Learning/TravelApp/project/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="moved images of pune in different folder">
+      <option name="closed" value="true" />
+      <created>1721385014301</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721385014301</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moved images of pune in different folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved images of pune in different folder" />
+  </component>
+</project>
